@@ -1,0 +1,43 @@
+{
+  "name": "restaurants-be",
+  "version": "0.0.1",
+  "description": "Back end part of the Restaurant project",
+  "author": "Davit Kurghinyan",
+  "scripts": {
+    "start": "node -r esm -r dotenv/config ./bin/www",
+    "dev": "nodemon -r esm -r dotenv/config ./bin/www",
+    "migrate-dev": "node -r esm -r dotenv/config ./bin/migrate.js",
+    "prettify": "prettier --write"
+  },
+  "dependencies": {
+    "@maxmind/geoip2-node": "^3.0.0",
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "~4.16.1",
+    "express-rate-limit": "^5.2.6",
+    "http-errors": "^1.8.0",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.2.5",
+    "node-input-validator": "^4.4.1",
+    "public-ip": "^4.0.4",
+    "sequelize": "^6.6.2",
+    "sequelize-paginate": "^1.1.6",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7",
+    "prettier": "2.4.1"
+  }
+}
