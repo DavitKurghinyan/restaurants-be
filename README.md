@@ -13,4 +13,3 @@ Run `yarn dev`
 Run ` yarn start`
 
 Note: Please check .env file for the DB configuration 
-# Restaurant
